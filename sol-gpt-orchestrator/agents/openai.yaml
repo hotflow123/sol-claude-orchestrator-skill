@@ -1,6 +1,6 @@
-﻿interface:
-  display_name: "Sol GPT 家族编排"
-  short_description: "仅使用 GPT 家族，由 Sol 主控并最多追加一个模型"
-  default_prompt: "使用 $sol-gpt-orchestrator 仅以 GPT 家族、最多双模型处理当前任务。"
+interface:
+  display_name: "GPT-only 路由"
+  short_description: "禁止 Claude，Sol Medium 主控，最多两个获批代理"
+  default_prompt: "使用 $sol-gpt-orchestrator 启用 GPT-only；禁止 Claude，未经我明确批准不得启动 subagent。"
 policy:
   allow_implicit_invocation: false
